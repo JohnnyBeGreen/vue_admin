@@ -1,0 +1,232 @@
+//Form
+.jg-form_m
+    max-width: 800px
+.jg-form__actions
+    display: flex
+    justify-content: flex-end
+    button
+        margin-left: 10px
+    button:first-child
+        margin-left: 0
+
+//Form elements
+
+//Input
+.jg-input
+    position: relative
+    >input, select
+        box-sizing: border-box
+        padding: 0 15px
+        height: 60px
+        width: 100%
+        background-color: $invert
+
+.jg-input_m
+    >input, select
+        height: 40px
+        font-size: .8em
+    .jg-input-label
+        margin-top: 2px
+        font-size: .6em
+
+.jg-input-text, .jg-input-select
+    >input, >select
+        border: 1px solid $monochrome-lighter
+        border-bottom: none
+.jg-input-text_novalidation, .jg-input-select_novalidation
+    >input
+        border-bottom: 1px solid $monochrome-lighter
+
+.jg-input-label
+    position: absolute
+    
+    margin-top: 5px
+    margin-left: 15px
+
+    font-size: .7em
+    color: $monochrome-light
+
+    z-index: 1000
+    
+.jg-input__icon
+    width: 3em
+    height: 2em
+    position: absolute
+    right: 0
+    top: 25%
+    background-color: $invert
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    cursor: pointer
+    span
+        display: block
+
+//Select
+select
+    appearance: none //Убирает родную стрелочку
+    background-color: transparent
+    border: none
+    padding: 0 1em 0 0
+    margin: 0
+    width: 100%
+    font-family: inherit
+    font-size: inherit
+    cursor: inherit
+    line-height: inherit
+    outline: none
+    color: $main-dark
+select::-ms-expand //Убирает родную стрелочку в IE
+    display: none
+
+.jg-input-select
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: flex-end
+.jg-input-select__arrow
+    position: absolute
+    width: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    span
+        display: block
+        color: $monochrome-light
+        font-size: .8em
+
+.jg-input-select__item
+    padding: 10px 0
+
+.jg-input-select_filter
+    min-width: 300px
+    select
+        height: 40px
+        font-size: .8em
+    .jg-input-select
+        border-bottom: 1px solid $monochrome-lighter
+
+//File
+.jg-input-file
+    &__label
+        margin-bottom: 10px
+        span
+            font-family: $main-font-medium
+            font-size: .9em    
+
+    &__file
+        padding: 0 0 10px
+        display: flex
+        align-items: center
+        font-size: .9em
+    &__container
+        box-sizing: border-box
+        padding: 10px
+    &__icon
+        span
+            display: block
+            font-size: 1.2em
+    &__name
+        font-family: $main-font-medium
+
+    &__input
+        position: relative
+        display: flex
+        align-items: center
+        input
+            opacity: 0
+            width: 0.1px
+            height: 0.1px
+            position: absolute
+        label
+            display: block
+            position: relative
+            width: 150px
+            height: 40px
+            border-radius: 3px
+            background-color: $grey
+            box-shadow: 0px 0px 2px 1px rgba($shaddow, .4)
+            font-size: .9em
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            &:active
+                background-color: darken($grey, 5)
+    
+    &__gallery
+        width: 100%
+        margin-bottom: 10px
+        display: flex
+        justify-content: flex-start
+        flex-direction: row
+        flex-wrap: wrap
+        &__item
+            position: relative
+            width: 320px
+            height: 250px
+            box-sizing: border-box
+            margin-bottom: 5px
+            margin-right: 5px
+            background-position: center
+            background-size: cover
+            &__delete
+                position: absolute
+                width: 25px
+                height: 25px
+                right: 0
+                background-color: $white
+                display: flex
+                justify-content: center
+                align-items: center
+                span
+                    display: block
+                    font-size: .9em
+                    cursor: pointer
+
+            &__name
+                position: absolute
+                bottom: 0
+                box-sizing: border-box
+                padding: 10px
+                width: 100%
+                background: rgba($white, .8)
+                span
+                    font-size: .8em
+
+.jg-input-file__gallery__item__loader
+    margin-left: 160px
+
+
+.jg-input-file__preview
+    position: relative
+    width: 100%
+    margin-bottom: 10px
+    max-width: 480px
+    &__item
+        width: 100%
+    &__delete
+        position: absolute
+        width: 25px
+        height: 25px
+        right: 0
+        top: 0
+        background-color: $invert
+        display: flex
+        justify-content: center
+        align-items: center
+        span
+            display: block
+            font-size: .9em
+            cursor: pointer
+    &__name
+        position: absolute
+        bottom: 0
+        box-sizing: border-box
+        padding: 10px
+        width: 100%
+        background: rgba($invert, .8)
+        span
+            font-size: .8em

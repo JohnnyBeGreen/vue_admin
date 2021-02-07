@@ -1,0 +1,23 @@
+//Validation
+
+.jg-validation
+    position: relative
+    min-height: 20px
+    &__mark
+        box-sizing: border-box
+        border-top: 1px solid $input-border
+        &_active
+            border-top: 1px solid $not-valid
+    &__text
+        span
+            display: block
+            color: $not-valid
+            font-size: .7em
+            text-align: right
+
+.jg-validation_transparent
+    .jg-validation__mark
+        box-sizing: border-box
+        border-top: 1px solid transparent
+    .jg-validation__mark_active
+        border-top: 1px solid $not-valid 

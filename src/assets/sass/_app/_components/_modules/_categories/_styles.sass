@@ -1,0 +1,65 @@
+//Categories
+
+.jg-categories
+    &__root
+        max-width: 600px
+        margin-bottom: 20px
+    &__items
+        box-sizing: border-box
+        padding: 20px 0
+        
+        display: inline-flex
+        flex-direction: column
+        align-items: flex-start
+        width: 100%
+        .jg-category:first-child
+            margin-top: 0
+        .jg-category
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            &__main
+                position: relative
+                display: flex
+                align-items: center
+                box-sizing: border-box
+                padding: 10px 15px
+                background-color: $invert            
+                border-radius: 5px
+            &__root
+                margin-right: 10px
+                color: $root-category
+            &__root_sub-1
+                color: $primary-dark
+            &__root_sub-2
+                color: $primary-light
+            &__name
+                display: inline-block
+                margin-right: 10px
+                cursor: pointer
+                text-decoration: underline
+            &__input
+                width: 600px
+                margin-right: 1px
+            &__actions
+                display: flex
+            &__action
+                widht: 40px
+                height: 40px
+                margin: 0 1px
+                border: 1px solid $input-border
+            &__loader
+                margin-left: 5px
+                right: -25px
+            &__add-subcategory
+                bottom: 0
+                margin-top: 10px
+                width: 100%
+                display: flex
+                align-items: center
+                .jg-category__input
+                    width: 600px
+                           
+            &__children
+                padding-top: 20px
+                padding-left: 40px

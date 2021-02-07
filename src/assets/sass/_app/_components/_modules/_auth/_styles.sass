@@ -1,0 +1,45 @@
+//Auth: login, signup
+
+//Login
+.jg-login__container
+    padding: 20px
+    width: 380px
+    @media screen and ( max-width: 400px )
+        width: 100%
+        
+//Panels
+.jg-auth-panel, .jg-logout-panel
+    display: flex
+    align-items: center
+
+    box-sizing: border-box
+    padding: 0 10px
+    height: 50px
+    border-radius: 5px
+    color: $white
+
+//Auth panel
+.jg-auth-panel
+    color: $white
+    &__avatar
+        padding: 0 10px 0 0
+        span
+            display: block
+            font-size: 2em
+            opacity: .8
+    &__info
+        span
+            display: block
+    &__email
+        font-size: .8em
+    &__role
+        font-size: .8em
+        font-family: $main-font-bold
+
+//Logout panel
+.jg-logout-panel
+    width: 50px
+    justify-content: center
+    &__icon
+        cursor: pointer
+        font-size: .9em

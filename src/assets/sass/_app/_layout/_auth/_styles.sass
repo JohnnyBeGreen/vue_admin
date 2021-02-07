@@ -1,0 +1,35 @@
+//Auth layout
+$top-height: 60px
+$bottom-height: 30px
+
+.jg-layout__top,
+.jg-layout__middle,
+.jg-layout__bottom
+    header,
+    >section,
+    footer
+        padding: 0 10px
+
+.jg-layout__top
+    min-height: $top-height
+    display: flex
+    align-items: center
+    background-color: $primary-base
+
+.jg-layout__middle
+    display: flex
+    min-height: calc(100vh - #{$top-height} - #{$bottom-height}) 
+    padding: 10px 0
+
+    .jg-layout__sidemenu
+        display: flex
+        flex-direction: column
+
+    .jg-layout__view
+        width: 100%
+
+.jg-layout__bottom
+    min-height: $bottom-height
+    display: flex
+    align-items: center
+    background-color: $primary-base

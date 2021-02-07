@@ -1,0 +1,38 @@
+//News
+.jg-news-list
+    padding-top: 0
+.jg-news-list__item:last-child
+        border-bottom: none
+.jg-news-list__item:nth-child(odd)
+    background-color: rgba($grey, .2)
+.jg-news-list__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+    padding: 20px
+    border-bottom: 1px solid $grey
+    &:hover
+        background-color: rgba($grey, .1)
+
+    &__main-container
+        position: relative
+        max-width: 900px
+    &__date
+        margin-bottom: 5px
+        span
+            font-size: .8em
+            font-family: $main-font-medium
+    &__title
+        p
+            font-family: $main-font-medium
+            font-size: .9em
+            line-height: 1.5em
+            color: $accent
+            cursor: pointer
+            &:hover
+                text-decoration: underline
+    &__controls
+        display: flex
+        justify-content: space-between
+        width: 80px

@@ -1,0 +1,64 @@
+//Regular page modal
+.gz-regular-page-modal
+    position: relative
+
+    background-color: #fff
+
+    .gz-regular-page-modal__header
+        box-sizing: border-box
+        padding: 20px
+
+        background-color: $accent
+
+        display: flex
+        align-items: center
+        span
+            display: block
+            color: $white
+
+        .gz-regular-page-modal__icon
+            margin-right: 10px
+            
+            font-size: 1.6rem
+
+    .gz-regular-page-modal__content
+        position: relative
+        max-height: 60vh
+        overflow-y: auto
+
+        box-sizing: border-box
+        padding: 20px
+        margin: 2px 0
+
+        ul
+            list-style-type: none
+
+        .gz-regular-page-modal__text
+            font-size: .9rem
+            line-height: 1.2rem
+
+    .gz-regular-page-modal__actions
+        >div
+            text-align: center
+            span
+                display: inline-block
+                font-size: .9rem
+        section
+            display: flex
+            justify-content: center
+            padding: 10px 0 20px
+            margin: auto
+
+            max-width: 410px            
+            @media screen and ( max-width: 500px )
+                flex-direction: column
+                width: 100%
+        
+        button
+            max-width: 200px
+            flex: 1 0 auto
+            @media screen and ( max-width: 500px )
+                max-width: 100%
+                margin: 0 20px 15px
+        button:last-child
+            margin: 0 20px
